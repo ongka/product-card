@@ -6,9 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
         <title></title>
     </head>
     <body>
+        <div class="container">
+            <div class="item">
+                <img src="images/shoe.png" id="firstShoe">
+                <img src="images/shoe.png" id="secondShoe">
+                <div class="item-inner">
+                    <div class="top">
+                        <div class="nav">
+                            <i class="bi bi-arrow-left-short" id="arrow-left"></i>
+                            <i class="bi bi-arrow-right-short" id="arrow-right"></i>
+                        </div>
+                        <h3>Nike</h3>
+                        <h1>React 55</h1>
+                        <h5>1/6</h5>
+                    </div>
+                    <div class="bottom">
+                        <h3>Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit corrupti eius ipsa adipisci ducimus ex!</p>
+                        <div class="options">
+                            <i class="bi bi-heart-fill"></i>
+                            <a href="#">$110 - Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var firstImg = document.getElementById("firstShoe");
+            var secondImg = document.getElementById("secondShoe");
 
+            var leftArrow = document.getElementById("arrow-left");
+            var rightArrow = document.getElementById("arrow-right");
+
+            leftArrow.onclick = function () {
+                firstImg.style.left = "650px";
+                secondImg.style.left = "-50px";
+            }
+
+            rightArrow.onclick = function () {
+                firstImg.style.left = "-50px";
+                secondImg.style.left = "-650px";
+            }
+
+        </script>
     </body>
 </html>
