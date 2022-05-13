@@ -71,7 +71,7 @@ body
     font-weight: 600;
 }
 
-.top h5
+.top h4
 {
     font-weight: 400;
 }
@@ -87,6 +87,12 @@ body
     margin-bottom: 10px;
 }
 
+.bottom p
+{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
 .options i
 {
     font-size: 20px;
@@ -95,6 +101,8 @@ body
     padding: 10px 12px;
     border-radius: 10px;
     cursor: pointer;
+    
+    
 }
 
 .options a
@@ -106,6 +114,7 @@ body
     background-color: tomato;
     padding: 10px 12px;
     border-radius: 10px;
+    
 }
 
 #firstShoe
